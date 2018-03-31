@@ -22,10 +22,10 @@ The default maximum size (10GB) for docker containers is not sufficient and must
 
 2. set  dm.basesize=18GB 
 How to increase the size is depending on the docker version and storage configurations
-    * e.g. CentOS Atomic Host 7.4 (Docker 1.12.6)
-        add '--storage-opt dm.basesize=18G'	to /etc/sysconfig/docker-storage
-    * e.g. OL7 (Docker 17.12.1-ce)
-        add '"storage-opts": ["dm.basesize=18G"]' to /etc/docker/daemon.json
+    * e.g. CentOS Atomic Host 7.4 (Docker 1.12.6):  
+        add ```--storage-opt dm.basesize=18G```	to /etc/sysconfig/docker-storage
+    * e.g. OL7 (Docker 17.12.1-ce):  
+        add ```"storage-opts": ["dm.basesize=18G"]``` to /etc/docker/daemon.json
  
 3. restart the docker daemon
     ```
@@ -74,5 +74,6 @@ docker logs oracle12c_dem
 
 ## Development
 Git Repository: https://github.com/nochmu/docker-oracle12c 
+
 Maintainer: nochmu <github@nochmu.net>
 
