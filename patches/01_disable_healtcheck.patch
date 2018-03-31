@@ -1,0 +1,11 @@
+--- orig/docker-images/OracleDatabase/SingleInstance/dockerfiles/12.2.0.1/Dockerfile.ee	2018-03-30 21:28:48.710054287 +0200
++++ patches/docker-images/OracleDatabase/SingleInstance/dockerfiles/12.2.0.1/Dockerfile.ee	2018-03-31 01:47:25.799300587 +0200
+@@ -73,8 +73,6 @@
+ 
+ VOLUME ["$ORACLE_BASE/oradata"]
+ EXPOSE 1521 5500
+-HEALTHCHECK --interval=1m --start-period=5m \
+-   CMD "$ORACLE_BASE/$CHECK_DB_FILE" >/dev/null || exit 1
+ 
+ # Define default command to start Oracle Database. 
+ CMD exec $ORACLE_BASE/$RUN_FILE

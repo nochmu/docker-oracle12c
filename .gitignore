@@ -1,0 +1,3 @@
+docker-images/
+downloads/*
+!downloads/README.md
