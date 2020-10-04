@@ -1,4 +1,4 @@
-# Utils to run a Oracle Database Instance with docker
+# Utils to run an Oracle Database Instance with docker
 
 These utils are useful to create and run an Oracle Database with Docker.
 Oracle provides docker files, but to create an image additional work is necessary. 
